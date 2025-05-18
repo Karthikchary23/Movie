@@ -1,0 +1,105 @@
+.movie-details-container {
+  background-color: black;
+  color: white;
+  min-height: 100vh;
+  padding: 30px;
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.movie-poster-container {
+  flex: 1;
+  max-width: 400px;
+  padding: 10px; /* Adds space inside the container */
+  box-sizing: border-box;
+}
+
+.movie-poster {
+  width: 100%;
+  height: 500px;         /* Set a fixed height */
+  object-fit: cover;     /* Crop and fill container */
+  margin: 10px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.cinema-status {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.movie-info-container {
+    
+  flex: 2;
+  max-width: 800px;
+    padding: 200px; /* Adds space inside the container */
+
+}
+
+.movie-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.rating-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.rating {
+  font-size: 20px;
+  color: #ff1493;
+}
+
+.vote-count {
+  color: #b3b3b3;
+}
+
+.rate-button {
+  background-color: white;
+  color: black;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.movie-details-tags {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.movie-tag {
+  background-color: #444;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.movie-summary {
+  color: #cccccc;
+  margin-bottom: 20px;
+}
+
+.book-tickets-button {
+  background-color: #d62d4b;
+  padding: 12px 24px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.loading-message {
+  text-align: center;
+  margin-top: 100px;
+  color: gray;
+}

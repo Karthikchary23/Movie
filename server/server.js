@@ -57,7 +57,7 @@ app.get('/get-all-movies', (req,res) => {
         rows.forEach((row)=> {
             data.push({
                 movie_id: row.movie_id,
-                movie_title: row.contact_name,
+                movie_title: row.movie_title,
                 movie_director: row.movie_director,
                 movie_genre: row.movie_genre,
                 movie_release_year: row.movie_release_year,

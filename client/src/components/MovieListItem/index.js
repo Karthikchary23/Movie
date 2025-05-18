@@ -42,13 +42,13 @@ const MovieListItem = ({ movie, onDelete }) => {
         <div className="movie-list-item card">
             <Link to={`/movie/${movie_id}`} className="movie-link">
                 <div className="movie-poster-container">
-                    <img src={movie_poster_url} alt={movie_title} className="movie-poster" />
+                    <img src={movie_poster_url} alt={movie_title} className="movie-poster1" />
                     {movie_is_watched && (
                         <span className="watched-badge">Watched</span>
                     )}
                 </div>
                 <div className="movie-details">
-                    <h3 className="movie-title">{movie_title}</h3>
+                    <p className="movie-title">{movie_title}</p>
                     <p className="movie-director"><strong>Director:</strong> {movie_director}</p>
                     <div className="movie-meta">
                         <span className="movie-genre">{movie_genre}</span>
