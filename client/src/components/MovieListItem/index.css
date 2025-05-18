@@ -1,0 +1,162 @@
+/* Movie List Item Styles */
+.movie-list-item {
+    display: flex;
+    align-items: flex-start;
+    background: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    margin: 16px 0;
+    padding: 16px 20px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    position: relative;
+}
+
+.movie-list-item:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+.movie-link {
+    display: flex;
+    flex: 1;
+    text-decoration: none;
+    color: inherit;
+    gap: 16px;
+}
+
+.movie-poster {
+    width: 110px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.movie-poster:hover {
+    transform: scale(1.05);
+}
+
+.watched-badge {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background: #4caf50;
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.movie-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.movie-title {
+    margin: 0 0 6px 0;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #222;
+}
+
+.movie-meta {
+    display: flex;
+    gap: 12px;
+    margin-top: 6px;
+    font-size: 1rem;
+    color: #666;
+    font-style: italic;
+}
+
+.movie-genre,
+.movie-release-year {
+    padding: 2px 10px;
+    border-radius: 6px;
+    font-weight: 500;
+    background: #eeeeee;
+    color: #444;
+}
+
+.movie-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-left: 20px;
+    justify-content: center;
+}
+
+.update-btn,
+.delete-btn {
+    padding: 8px 18px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.update-btn {
+    background: #1976d2;
+    color: #fff;
+}
+
+.update-btn:hover {
+    background: #1565c0;
+    transform: scale(1.05);
+}
+
+.delete-btn {
+    background: #d32f2f;
+    color: #fff;
+}
+
+.delete-btn:hover {
+    background: #c62828;
+    transform: scale(1.05);
+}
+
+/* Responsive: Tablet */
+@media (max-width: 700px) {
+    .movie-list-item {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 14px 10px;
+    }
+
+    .movie-link {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .movie-poster {
+        width: 100%;
+        max-width: 220px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .movie-actions {
+        flex-direction: row;
+        gap: 14px;
+        margin-top: 12px;
+    }
+}
+
+/* Responsive: Mobile */
+@media (max-width: 450px) {
+    .movie-title {
+        font-size: 1.1rem;
+    }
+
+    .update-btn,
+    .delete-btn {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+    }
+}
